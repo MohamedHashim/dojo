@@ -6,20 +6,24 @@ export type Cell = typeof empty | typeof bot1 | typeof bot2;
 export type Board = Cell[][];
 
 export function newBoard(): Board {
-    const rows = 3;
-    const cols = 3;
+    const rows = 3
+    const cols = 3
     return Array(rows)
       .fill(null)
-      .map(() => Array(cols).fill(empty));}
+      .map(() => Array(cols).fill(empty))}
 
 export function startNewGame(): { board: Board } {
-    return { board: newBoard() };
+  return { board: newBoard() }
 }
 
 export function isValidCell(row: number, column: number): boolean{
-    return row >= 0 && row < 3 && column >= 0 && column < 3;
+    return row >= 0 && row < 3 && column >= 0 && column < 3
+}
+
+export function isCellOccupied(board: Board, row: number, column: number): boolean{
+    return false
 }
 
 export function makeMove( board: Board, row: number, column: number): { board: Board; status: String } {
-    return {board: newBoard(), status: ""}
-    }
+return {board: newBoard(), status: ""}
+}
