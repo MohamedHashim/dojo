@@ -47,7 +47,9 @@ Bot 1 starts the game every time and alternates with bot 2.
          -- ✅ occupied cell --> true
          -- ✅ Create some doubles needed
          -- ✅ Make the unit tests get success
-     -- 🍅 Create unit for place a sign 
+     -- ✅ Create unit for place a sign 
+         -- ✅ bot1 place a sign in 0*0 cell --> update the board 
+         -- ✅ bot2 place a sign in 1*1 cell --> update the board 
      -- 🍅 Make the unit tests get success
      -- 🍅 Make the component test get success
 

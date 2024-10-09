@@ -1,5 +1,5 @@
 import { describe } from "node:test";
-import { isCellOccupied, isValidCell, newBoard } from "../../src/tictactoe";
+import { isCellOccupied, isValidCell, newBoard, placeSign } from "../../src/tictactoe";
 import { gameBoardInProgress } from "../doubles/double";
 
 describe("Tic Tac Toe game", () => {
@@ -44,6 +44,28 @@ describe("Tic Tac Toe game", () => {
         const row = 2
         const column = 2
         expect(isCellOccupied(board, row, column)).toBe(true);
+      });
+    });
+
+    // unit tests for placing a sign function
+    describe("Placing a sign", () => {
+      it("in column 0 and row 0 should return the updated board", () => {
+        const board = newBoard()
+        const row = 0
+        const column = 0
+        const bot1 = 1
+        const updatedBoard = placeSign(board, row, column, bot1);
+        expect(updatedBoard).toBeDefined();
+        expect(updatedBoard[0][0]).toEqual("X");
+      });
+      it("in the last column should return the updated board", () => {
+        const board = newBoard();
+        const row = 1
+        const column = 1
+        const bot2 = 2
+        const updatedBoard = placeSign(board, row, column, bot2);
+        expect(updatedBoard).toBeDefined();
+        expect(updatedBoard[1][1]).toEqual("O");
       });
     });
   });

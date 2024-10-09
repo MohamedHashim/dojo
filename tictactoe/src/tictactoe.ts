@@ -24,6 +24,10 @@ export function isCellOccupied(board: Board, row: number, column: number): boole
     return board[row][column] != empty
 }
 
+export function placeSign(board: Board, row: number, column: number, bot: number): Board{
+    return newBoard()
+}
+
 export function makeMove( board: Board, row: number, column: number): { board: Board; status: String } {
 return {board: newBoard(), status: ""}
 }
