@@ -17,7 +17,7 @@ export function startNewGame(): { board: Board } {
 }
 
 export function isValidCell(row: number, column: number): boolean{
-    return false
+    return row >= 0 && row < 3 && column >= 0 && column < 3;
 }
 
 export function makeMove( board: Board, row: number, column: number): { board: Board; status: String } {
