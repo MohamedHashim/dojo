@@ -24,7 +24,7 @@ Bot 1 starts the game every time and alternates with bot 2.
 
 🍅 As a bot, I want a board that contains 3 columns and 3 rows, so strat the game
     -- ✅ Implement the component test for starting a game
-    -- 🍅 Implement the unit test for starting a game
+    -- ✅ Implement the unit test for starting a game
     -- 🍅 Make the unit tests get success
     -- 🍅 Make the component test get success
 
