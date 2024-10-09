@@ -42,10 +42,11 @@ Bot 1 starts the game every time and alternates with bot 2.
          -- ✅ column 7 && row 2 --> false
          -- ✅ column 0 && row 2 --> true
      -- ✅ Make the unit tests get success
-     -- 🍅 Create unit for cell is occupied
+     -- ✅ Create unit for cell is occupied
          -- ✅ available cell --> false
          -- ✅ occupied cell --> true
          -- ✅ Create some doubles needed
+         -- ✅ Make the unit tests get success
      -- 🍅 Create unit for place a sign 
      -- 🍅 Make the unit tests get success
      -- 🍅 Make the component test get success

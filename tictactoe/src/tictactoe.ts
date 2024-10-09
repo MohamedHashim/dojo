@@ -21,7 +21,7 @@ export function isValidCell(row: number, column: number): boolean{
 }
 
 export function isCellOccupied(board: Board, row: number, column: number): boolean{
-    return false
+    return board[row][column] != empty
 }
 
 export function makeMove( board: Board, row: number, column: number): { board: Board; status: String } {
