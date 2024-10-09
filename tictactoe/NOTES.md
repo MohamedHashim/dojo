@@ -21,3 +21,22 @@ If a bot attempts to place a sign in a cell that is out of the board bounderies 
 Any other move then you should return Bot n :” where n is the current bot either 1 or 2 and the updated board.
  
 Bot 1 starts the game every time and alternates with bot 2.
+
+# Backlog
+
+🍅 As a bot, I want a board that contains 3 columns and 3 rows, so strat the game
+
+🍅 Horizontal victory senario, which is any bot has 3 connected own signs Horizontally  
+
+🍅 Vertical victory senario, which is any bot has 3 connected own signs Vertically  
+
+🍅 Diagonal victory senario, which is any bot has 3 connected own signs Diagonally  
+
+🍅 Draw senario, when there is no bots won the game
+
+🍅 Edge senarios, when bot play out of the bounderies or on the occupied cell
+
+
+
+## Notes 
+    ✅ Update the cucumber features with first feature
