@@ -13,5 +13,5 @@ export function newBoard(): Board {
       .map(() => Array(cols).fill(empty));}
 
 export function startNewGame(): { board: Board } {
-  return { board:[] };
+    return { board: newBoard() };
 }

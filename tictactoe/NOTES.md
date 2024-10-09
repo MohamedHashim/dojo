@@ -29,6 +29,17 @@ Bot 1 starts the game every time and alternates with bot 2.
     -- ✅ Implement the unit test for starting a game
     -- ✅ Make the unit tests get success
     -- ✅ Make the component test get success
+    
+🍅 Creat a component: bot place a sign in X column and X row
+     -- 🍅 Implement the component test for placing a sign
+     -- 🍅 Create unit for checking if it's a valid cell
+         -- 🍅 column 4 && row 0 --> false
+         -- 🍅 column 0 && row 0 --> true
+     -- 🍅 Create unit for place a sign 
+         -- 🍅 available cell --> board with the updated sign
+         -- 🍅 occupied cell --> show it's occupied message and keep the bot turn
+     -- 🍅 Make the unit tests get success
+     -- 🍅 Make the component test get success
 
 🍅 Horizontal victory senario, which is any bot has 3 connected own signs Horizontally  
 
