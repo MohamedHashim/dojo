@@ -1,9 +1,17 @@
-export type Board = Array<number>[][];
+export const bot1 = "X";
+export const bot2 = "O";
+export const empty = "";
+type BotSign = typeof bot1 | typeof bot2;
+export type Cell = typeof empty | typeof bot1 | typeof bot2;
+export type Board = Cell[][];
 
 export function newBoard(): Board {
-    return []
-}
+    const rows = 3;
+    const cols = 3;
+    return Array(rows)
+      .fill(null)
+      .map(() => Array(cols).fill(empty));}
 
-export function startNewGame(): { board: String } {
-  return { board: "board" };
+export function startNewGame(): { board: Board } {
+  return { board:[] };
 }

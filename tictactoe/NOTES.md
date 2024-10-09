@@ -22,11 +22,23 @@ Any other move then you should return Bot n :” where n is the current bot eith
  
 Bot 1 starts the game every time and alternates with bot 2.
 
-🍅 As a bot, I want a board that contains 3 columns and 3 rows, so strat the game
+# Backlog
+
+✅ As a bot, I want a board that contains 3 columns and 3 rows, so strat the game
     -- ✅ Implement the component test for starting a game
     -- ✅ Implement the unit test for starting a game
-    -- 🍅 Make the unit tests get success
-    -- 🍅 Make the component test get success
+    -- ✅ Make the unit tests get success
+    -- ✅ Make the component test get success
+
+🍅 Horizontal victory senario, which is any bot has 3 connected own signs Horizontally  
+
+🍅 Vertical victory senario, which is any bot has 3 connected own signs Vertically  
+
+🍅 Diagonal victory senario, which is any bot has 3 connected own signs Diagonally  
+
+🍅 Draw senario, when there is no bots won the game
+
+🍅 Edge senarios, when bot play out of the bounderies or on the occupied cell
 
 🍅 Horizontal victory senario, which is any bot has 3 connected own signs Horizontally  
 
