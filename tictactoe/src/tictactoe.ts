@@ -15,3 +15,7 @@ export function newBoard(): Board {
 export function startNewGame(): { board: Board } {
     return { board: newBoard() };
 }
+
+export function makeMove( board: Board, row: number, column: number): { board: Board; status: String } {
+    return {board: newBoard(), status: ""}
+    }

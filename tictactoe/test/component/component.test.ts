@@ -1,4 +1,4 @@
-import {Board, startNewGame } from "../../src/tictactoe";
+import {Board, makeMove, startNewGame } from "../../src/tictactoe";
 
 describe("When start a new game", () => {
   it("It should return an empty 3*3 board", () => {
@@ -21,5 +21,18 @@ describe("When start a new game", () => {
     // Type assertion to check if the type is correct
     const boardType: Board = newGame.board;
     expect(boardType).toBe(newGame.board);
+  });
+});
+
+describe("Bots can place a sign feature", () => {
+  it("Making a move entails palcing the first bot sign and executing a move for the other bot.", () => {
+    const newGame = startNewGame();
+    const row = 0;
+    const column = 0;
+    const updatedGame = makeMove(newGame.board, row, column);
+    expect(updatedGame).toBeDefined();
+    expect(updatedGame.board.some((row) => row.includes("X"))).toBe(true);
+    expect(updatedGame.board.some((row) => row.includes(""))).toBe(true);
+    expect(updatedGame.status).toBe("IN_PROGRESS");
   });
 });
