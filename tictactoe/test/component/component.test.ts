@@ -29,7 +29,7 @@ describe("Bots can place a sign feature", () => {
     const newGame = startNewGame();
     const row = 0;
     const column = 0;
-    const updatedGame = makeMove(newGame.board, row, column);
+    const updatedGame = makeMove(newGame.board);
     expect(updatedGame).toBeDefined();
     expect(updatedGame.board.some((row) => row.includes("X"))).toBe(true);
     expect(updatedGame.board.some((row) => row.includes(""))).toBe(true);
