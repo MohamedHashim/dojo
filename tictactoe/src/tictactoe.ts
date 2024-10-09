@@ -25,7 +25,12 @@ export function isCellOccupied(board: Board, row: number, column: number): boole
 }
 
 export function placeSign(board: Board, row: number, column: number, bot: number): Board{
-    return newBoard()
+    const cell = bot === 1 ? bot1 : bot2;
+    const updatedBoard = board;
+    if(isValidCell(row, column) && !isCellOccupied(updatedBoard, row, column)){
+        updatedBoard[row][column] = cell;
+      }
+    return updatedBoard;
 }
 
 export function makeMove( board: Board, row: number, column: number): { board: Board; status: String } {
