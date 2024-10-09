@@ -16,6 +16,10 @@ export function startNewGame(): { board: Board } {
     return { board: newBoard() };
 }
 
+export function isValidCell(row: number, column: number): boolean{
+    return false
+}
+
 export function makeMove( board: Board, row: number, column: number): { board: Board; status: String } {
     return {board: newBoard(), status: ""}
     }

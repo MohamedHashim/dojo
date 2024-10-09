@@ -30,11 +30,18 @@ Bot 1 starts the game every time and alternates with bot 2.
     -- ✅ Make the unit tests get success
     -- ✅ Make the component test get success
 
+✅ As a bot, I want a board that contains 3 columns and 3 rows, so start the game
+    -- ✅ Implement the component test for starting a game
+    -- ✅ Implement the unit test for starting a game
+    -- ✅ Make the unit tests get success
+    -- ✅ Make the component test get success
+
 🍅 Creat a component: bot place a sign in X column and X row
      -- ✅ Implement the component test for placing a sign
-     -- 🍅 Create unit for checking if it's a valid cell
-         -- 🍅 column 4 && row 0 --> false
-         -- 🍅 column 0 && row 0 --> true
+     -- ✅ Create unit for checking if it's a valid cell
+         -- ✅ column 7 && row 2 --> false
+         -- ✅ column 0 && row 2 --> true
+     -- 🍅 Make the unit tests get success
      -- 🍅 Create unit for place a sign 
          -- 🍅 available cell --> board with the updated sign
          -- 🍅 occupied cell --> show it's occupied message and keep the bot turn
