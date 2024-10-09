@@ -25,7 +25,7 @@ describe("When start a new game", () => {
 });
 
 describe("Bots can place a sign feature", () => {
-  it("Making a move entails palcing the first bot sign and executing a move for the other bot.", () => {
+  it("Making a move entails placing the first bot sign and executing a move for the other bot.", () => {
     const newGame = startNewGame();
     const row = 0;
     const column = 0;
@@ -33,6 +33,5 @@ describe("Bots can place a sign feature", () => {
     expect(updatedGame).toBeDefined();
     expect(updatedGame.board.some((row) => row.includes("X"))).toBe(true);
     expect(updatedGame.board.some((row) => row.includes(""))).toBe(true);
-    expect(updatedGame.status).toBe("IN_PROGRESS");
   });
 });

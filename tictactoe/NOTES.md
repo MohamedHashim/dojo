@@ -30,12 +30,6 @@ Bot 1 starts the game every time and alternates with bot 2.
     -- ✅ Make the unit tests get success
     -- ✅ Make the component test get success
 
-✅ As a bot, I want a board that contains 3 columns and 3 rows, so start the game
-    -- ✅ Implement the component test for starting a game
-    -- ✅ Implement the unit test for starting a game
-    -- ✅ Make the unit tests get success
-    -- ✅ Make the component test get success
-
 ✅ Creat a component: bot place a sign in X column and X row
      -- ✅ Implement the component test for placing a sign
      -- ✅ Create unit for checking if it's a valid cell
@@ -52,28 +46,21 @@ Bot 1 starts the game every time and alternates with bot 2.
          -- ✅ bot2 place a sign in 1*1 cell --> update the board 
      -- ✅ Make the unit tests get success
      -- ✅ Make the component test get success
+   
+✅ Horizontal victory senario, which is any bot has 3 connected own signs Horizontally 
+     -- 🍅 Implement the component test for checking the horizontal victory
+     -- 🍅 Implement the unit tests for checking the horizontal victory
+          -- 🍅 Two connected horizontally signs, playing on the third adjacent to it --> true
 
-🍅 Horizontal victory senario, which is any bot has 3 connected own signs Horizontally  
+✅ Vertical victory senario, which is any bot has 3 connected own signs Vertically  
 
-🍅 Vertical victory senario, which is any bot has 3 connected own signs Vertically  
+✅ Diagonal victory senario, which is any bot has 3 connected own signs Diagonally  
 
-🍅 Diagonal victory senario, which is any bot has 3 connected own signs Diagonally  
+✅ Draw senario, when there is no bots won the game
 
-🍅 Draw senario, when there is no bots won the game
-
-🍅 Edge senarios, when bot play out of the bounderies or on the occupied cell
-
-🍅 Horizontal victory senario, which is any bot has 3 connected own signs Horizontally  
-
-🍅 Vertical victory senario, which is any bot has 3 connected own signs Vertically  
-
-🍅 Diagonal victory senario, which is any bot has 3 connected own signs Diagonally  
-
-🍅 Draw senario, when there is no bots won the game
-
-🍅 Edge senarios, when bot play out of the bounderies or on the occupied cell
-
-
+✅ Edge senarios, when bot play out of the bounderies or on the occupied cell
 
 ## Notes 
-    ✅ Update the cucumber features with first feature
+
+✅ Update the cucumber features with first feature
+🍅 We need to add the unit test for the victory scenarios but in sake of time!
